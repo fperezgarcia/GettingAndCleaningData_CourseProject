@@ -1,4 +1,3 @@
-setwd("/Users/fernando_perez/Documents/workspace_R/coursera/GettingAndCleaningData_CourseProject/data")
 library(plyr)
 library(data.table)
 
