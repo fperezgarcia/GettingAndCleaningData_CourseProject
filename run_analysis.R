@@ -26,6 +26,15 @@ ImportData <- function (fileName, dir="root"){
 ##########################
 ##1. Merges the training and the test sets to create one data set.
 ##########################
+sourceNameZip <- "getdata-projectfiles-UCI HAR Dataset.zip"
+url           <- "http://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+
+#Download / Unzip source data
+if (!file.exists(sourceNameZip)){
+    download.file(url, sourceNameZip, method="curl")
+    unzip(sourceNameZip,exdir=".") 
+}
+
 #Load Features Data
 trainData <- ImportData("X_train.txt", "train")
 testData  <- ImportData("X_test.txt", "test")
