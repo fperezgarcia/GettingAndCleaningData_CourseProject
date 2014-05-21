@@ -58,4 +58,18 @@ Notes:
 Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
 
 
-Tidy Data:
+Tidy Output Data:
+
+Data file with 81 colums, after applying all the transformations described in transformations section.
+
+- Activity Name ("WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING")
+- SubjectId
+- 79 columns with the mean of all the "std" and "mean" columns of the input data
+
+Transformations:
+
+1. Merges the training and the test sets to create one data set.
+2. Extracts only the measurements on the mean and standard deviation for each measurement.
+3. Uses descriptive activity names to name the activities in the data set
+4. Appropriately labels the data set with descriptive activity names
+5. Creates a tidy data set with the average of each variable for each activity and each subject. 
